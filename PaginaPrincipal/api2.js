@@ -3,7 +3,6 @@ document.getElementById(
   "resultadoPersonaje"
 );
 
-
 async function obtenerPersonajes() {
 
   const respuesta =
@@ -14,12 +13,11 @@ async function obtenerPersonajes() {
   const datos =
     await respuesta.json();
 
-
   resultado.innerHTML = "";
 
-
-  datos.results.forEach(
-    (personaje) => {
+  datos.results
+    .slice(0, 15) 
+    .forEach((personaje) => {
 
       resultado.innerHTML += `
 
@@ -47,10 +45,8 @@ async function obtenerPersonajes() {
 
       `;
 
-    }
-  );
+    });
 
 }
-
 
 obtenerPersonajes();
