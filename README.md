@@ -213,4 +213,5 @@ Desarrollar una aplicación web capaz de gestionar estudiantes y usuarios utiliz
 
 # 👨‍💻 Autores
 
-Proyecto desarrollado para la entrega académica "Momento 3".
+Juan Esteban Torres Rodriguez
+Diego Alejandro Agudelo Niño
